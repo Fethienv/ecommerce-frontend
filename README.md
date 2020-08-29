@@ -1,4 +1,4 @@
-# jawlatte
+# Nuxtjs E-commerce frontend project
 
 ## Build Setup
 
