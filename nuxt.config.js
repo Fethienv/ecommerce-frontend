@@ -117,6 +117,15 @@ export default {
   i18n: {
     seo: true,
     baseUrl: 'http://localhost:3000',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      cookieCrossOrigin: true,
+      alwaysRedirect: true,
+    },
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'en',
     locales: [
       {
         name: 'Arabic',
@@ -131,9 +140,6 @@ export default {
         file: 'en-US.js',
       },
     ],
-    lazy: true,
-    langDir: 'lang/',
-    defaultLocale: 'en',
   },
   /*
    ** Build configuration
