@@ -6,8 +6,6 @@
       :to="switchLocalePath(locale.code)"
       >{{ locale.name }}</nuxt-link
     >
-    <br />
-    {{ $t('hello') }}
   </v-layout>
 </template>
 

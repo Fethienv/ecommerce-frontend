@@ -1,7 +1,7 @@
 <template>
-  <v-layout>
+  <footer>
     Footer
-  </v-layout>
+  </footer>
 </template>
 
 <script>
