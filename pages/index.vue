@@ -1,15 +1,9 @@
 <template>
   <v-layout column justify-center align-center>
-    <Logo />
+    Comming soon
   </v-layout>
 </template>
 
 <script>
-import Logo from '@/components/Logo.vue'
-
-export default {
-  components: {
-    Logo,
-  },
-}
+export default {}
 </script>

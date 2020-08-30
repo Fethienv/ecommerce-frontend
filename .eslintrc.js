@@ -17,9 +17,11 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    'prettier/prettier': ['error'],
+    'no-console':
+      process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger':
       process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/no-use-v-if-with-v-for': 'off',
+    'prettier/prettier': ['error'],
   },
 }

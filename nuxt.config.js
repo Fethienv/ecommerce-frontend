@@ -37,7 +37,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/global.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -123,7 +123,7 @@ export default {
           success: colors.green.accent3,
           txt_pr_1: colors.white,
           txt_pr_2: colors.blue.lighten5,
-          txt_nd_1: colors.white,
+          txt_nd_1: colors.grey.lighten5,
           txt_nd_2: colors.grey.lighten1,
           txt_nl_1: colors.black,
           txt_nl_2: colors.grey.darken1,

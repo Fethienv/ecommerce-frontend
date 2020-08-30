@@ -1,0 +1,52 @@
+.transform-left {
+  border-bottom-left-radius: 2.5px !important;
+  transform: skewX(30deg) !important;
+  transform-origin: top left !important;
+}
+
+.invert-transform-left {
+  border-bottom-left-radius: 2.5px !important;
+  transform: skewX(-30deg) !important;
+  transform-origin: top left !important;
+}
+
+.transform-right {
+  border-bottom-right-radius: 2.5px !important;
+  transform: skewX(-30deg) !important;
+  transform-origin: top left !important;
+}
+
+.invert-transform-right {
+  border-bottom-right-radius: 2.5px !important;
+  transform: skewX(30deg) !important;
+  transform-origin: top left !important;
+}
+
+.W-310 {
+  max-width: 310px !important;
+  min-width: 310px !important;
+}
+
+.W-480 {
+  max-width: 480px !important;
+  min-width: 480px !important;
+}
+
+.H-30 {
+  max-height: 30px !important;
+  min-height: 30px !important;
+}
+
+.F-11,
+.text--F-11 {
+  font-size: 11px !important;
+  line-height: normal !important;
+  letter-spacing: 0.07em !important;
+}
+
+.F-14,
+.text--F-14 {
+  font-size: 14px !important;
+  line-height: normal !important;
+  letter-spacing: 0.07em !important;
+}
