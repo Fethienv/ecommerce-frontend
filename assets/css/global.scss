@@ -1,25 +1,75 @@
-.transform-left {
-  border-bottom-left-radius: 2.5px !important;
-  transform: skewX(30deg) !important;
-  transform-origin: top left !important;
+.transform-top-left,
+.transform-top-right {
+  height: 100%;
+  overflow: hidden;
 }
 
-.invert-transform-left {
+.transform-top-left-root,
+.transform-top-left::before,
+.transform-top-left-after::after {
+  border-bottom-left-radius: 2.5px;
+  transform: skewX(30deg);
+  transform-origin: top left;
+}
+
+.transform-top-right-root,
+.transform-top-right::before,
+.transform-top-right-after::after {
+  border-bottom-right-radius: 2.5px;
+  transform: skewX(-30deg);
+  transform-origin: top right;
+}
+
+.transform-top-left::before,
+.transform-top-right::before,
+.transform-top-left-after::after,
+.transform-top-right-after::after {
+  display: block;
+  content: '';
+  width: calc(calc(100% / 2) - calc(310px / 2));
+  max-width: 100%;
+  height: 30px;
+  position: absolute;
+}
+
+.transform-top-right-after::after,
+.transform-top-left-after::after {
+  width: 38px !important;
+  z-index: 0;
+}
+
+.before_secondary::before {
+  background-color: #424242 !important;
+}
+
+.before_primary::before {
+  background-color: #64b5f6 !important;
+}
+
+.after_white::after {
+  background-color: white !important;
+}
+
+.invert-transform-top-left-root {
   border-bottom-left-radius: 2.5px !important;
   transform: skewX(-30deg) !important;
   transform-origin: top left !important;
 }
 
-.transform-right {
-  border-bottom-right-radius: 2.5px !important;
-  transform: skewX(-30deg) !important;
-  transform-origin: top left !important;
-}
-
-.invert-transform-right {
+.invert-transform-top-right-root {
   border-bottom-right-radius: 2.5px !important;
   transform: skewX(30deg) !important;
-  transform-origin: top left !important;
+  transform-origin: top right !important;
+}
+
+.W-72 {
+  max-width: 72px !important;
+  min-width: 72px !important;
+}
+
+.W-80 {
+  max-width: 85px !important;
+  min-width: 85px !important;
 }
 
 .W-310 {
@@ -27,14 +77,24 @@
   min-width: 310px !important;
 }
 
-.W-480 {
-  max-width: 480px !important;
-  min-width: 480px !important;
+.W-350 {
+  max-width: 350px !important;
+  min-width: 350px !important;
 }
 
 .H-30 {
   max-height: 30px !important;
   min-height: 30px !important;
+}
+
+.H-44 {
+  max-height: 44px !important;
+  min-height: 44px !important;
+}
+
+.H-80 {
+  max-height: 80px !important;
+  min-height: 80px !important;
 }
 
 .F-11,
@@ -49,4 +109,24 @@
   font-size: 14px !important;
   line-height: normal !important;
   letter-spacing: 0.07em !important;
+}
+
+.P-24 {
+  margin-top: -24px !important;
+}
+
+.P-30 {
+  margin-top: -30px !important;
+}
+
+.Z-10 {
+  z-index: 10 !important;
+}
+
+.Z-0 {
+  z-index: 0 !important;
+}
+
+.Z--1 {
+  z-index: -1 !important;
 }
