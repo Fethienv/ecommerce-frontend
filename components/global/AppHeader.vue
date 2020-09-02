@@ -122,8 +122,8 @@
     <v-row class="white H-80" no-gutters>
       <!-- Menu -->
       <v-col class="d-flex flex-column justify-center">
-        <div class="d-flex flex-row justify-end mx-13 px-13">
-          <v-btn text tile class="Mega_Menu">
+        <div class="d-flex flex-row justify-end pagesNavbar_margin">
+          <v-btn text tile class="Mega_Menu text-capitalize">
             <v-icon left>mdi-menu</v-icon>
             Menu
           </v-btn>
@@ -323,5 +323,10 @@ export default {
 .Mega_Menu.v-btn:hover {
   color: white;
   background-color: var(--v-primary-base);
+}
+
+.pagesNavbar_margin {
+  margin-right: 10% !important;
+  margin-left: 10% !important;
 }
 </style>
