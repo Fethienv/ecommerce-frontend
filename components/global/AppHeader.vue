@@ -13,7 +13,7 @@
         <v-btn
           v-for="(Item, i) in TopNavbar"
           :key="i"
-          :to="Item.link"
+          :href="Item.link"
           text
           class="primary txt_pr_2--text txt_nd_2_hover text-capitalize F-14 font-weight-regular H-30 px-1"
         >
@@ -119,7 +119,34 @@
       </v-col>
     </v-row>
     <!-- Menu & Logo -->
-    <v-row class="white H-80" no-gutters> <v-col> </v-col> </v-row>
+    <v-row class="white H-80" no-gutters>
+      <!-- Menu -->
+      <v-col class="d-flex flex-column justify-center">
+        <div class="d-flex flex-row justify-end mx-13 px-13">
+          <v-btn text tile class="Mega_Menu">
+            <v-icon left>mdi-menu</v-icon>
+            Menu
+          </v-btn>
+          <v-btn
+            v-for="(Item, i) in PagesNavbar"
+            :key="i"
+            :href="Item.link"
+            text
+            tile
+            class="text-capitalize"
+          >
+            {{ Item.name }}
+          </v-btn>
+        </div>
+      </v-col>
+      <!-- SLogo -->
+      <v-col class="W-310 text-center">
+        <span class="slogon primary--text">JAW</span>
+        <span class="slogon secondary--text">LATTE</span>
+      </v-col>
+      <!-- User Menu -->
+      <v-col> </v-col>
+    </v-row>
     <!-- search bar -->
     <v-row class="H-44 P-24 py-0">
       <v-col></v-col>
@@ -199,6 +226,20 @@ export default {
         link: 'track-order',
       },
     ],
+    PagesNavbar: [
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'Shop',
+        link: 'shop',
+      },
+      {
+        name: 'Blog',
+        link: 'blog',
+      },
+    ],
   }),
   computed: {
     availableLocales() {
@@ -271,5 +312,16 @@ export default {
   min-height: 2px !important;
   border-bottom: 2px solid #ebebeb !important;
   content: ' ';
+}
+.slogon {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.Mega_Menu.v-btn:hover {
+  color: white;
+  background-color: var(--v-primary-base);
 }
 </style>

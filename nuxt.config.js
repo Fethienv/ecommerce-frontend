@@ -89,6 +89,9 @@ export default {
     theme: {
       rtl: false,
       dark: false,
+      options: {
+        customProperties: true,
+      },
       themes: {
         dark: {
           primary: colors.blue.darken2,
